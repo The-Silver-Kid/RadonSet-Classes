@@ -4,7 +4,7 @@ import DevTSK.Util.Day;
 
 public class UnMarriedChangeling extends Changeling {
 
-	public UnMarriedChangeling(String Name, String AlternateName, String Flag, Boolean Gender, Boolean IsVamponii, String Description, String CutiiMarkInfo, String ManeColour, String TailColour, String Mother, String Father, Day bday, String Imagename, String CutiimarkImage) {
+	public UnMarriedChangeling(String Name, String AlternateName, String Flag, Boolean Gender, Boolean IsVamponii, String Description, String ManeColour, String TailColour, String Mother, String Father, Day bday, String Imagename, String CutiimarkImage) {
 		this.name = Name;
 		this.Gender = Gender;
 		this.otherBoolean = IsVamponii;
@@ -17,7 +17,6 @@ public class UnMarriedChangeling extends Changeling {
 
 		this.imagepath = Imagename;
 		this.altimagepath = CutiimarkImage;
-		this.additionalInfo = CutiiMarkInfo;
 		this.altName = AlternateName;
 
 		this.flag = Flag;
@@ -51,7 +50,6 @@ public class UnMarriedChangeling extends Changeling {
 				"\n\n" + description +
 				"\nMane : " + colour + "\nTail : " + anotherColour +
 				"\nBirthday : " + birthday.getMonth() + " " + birthday.getDay() + " " + birthday.getYear() +
-				"\n\nCutii Mark : " + additionalInfo +
 				"\n\nMother : " + mother + "\nFather : " + father +
 				"\nFlag : '" + flag + "'" +
 				"\n::End Of Changeling::";

@@ -31,7 +31,6 @@ public class UnMarriedChangelingPonii extends ChangelingPonii {
 				"\n\n" + description + vpni +
 				"\nMane : " + colour + "\nTail : " + anotherColour +
 				"\nBirthday : " + birthday.getMonth() + " " + birthday.getDay() + " " + birthday.getYear() +
-				"\n\nCutii Mark : " + additionalInfo +
 				"\n\nMother : " + mother + "\nFather : " + father +
 				"\nFlag : '" + flag + "'" +
 				"\n::End Of Changeling::";

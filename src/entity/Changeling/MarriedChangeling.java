@@ -62,7 +62,6 @@ public class MarriedChangeling extends Changeling {
 				"\n\n" + description +
 				"\nMane : " + colour + "\nTail : " + anotherColour +
 				"\nBirthday : " + birthday.getMonth() + " " + birthday.getDay() + " " + birthday.getYear() +
-				"\n\nCutii Mark : " + additionalInfo +
 				"\n\nMother : " + mother + "\nFather : " + father +
 				"\n\nMarried to : " + partnrs +
 				"\n\nKids : " + kdz +
