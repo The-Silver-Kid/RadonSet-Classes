@@ -32,7 +32,7 @@ public class UnMarriedPoniiWithKids extends Ponii {
 		if (kids.length != 0) {
 			kdz = kidammount + "\n";
 			for (int i = 0; i < kids.length; i++)
-				kdz = kdz + "With : \t" + with[i] + ":\t" + kids[i] + "\n";
+				kdz = kdz + "With : " + with[i] + ":\t" + kids[i] + "\n";
 		}
 		if (otherBoolean)
 			vpni = "\nIs a Vamponii";
