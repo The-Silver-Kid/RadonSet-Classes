@@ -7,7 +7,7 @@ public class MarriedWaterPonii extends WaterPonii {
 	public MarriedWaterPonii(String Name, String AlternateName, String Flag, Boolean Gender, Boolean IsVamponii, String Description, String CutiiMarkInfo, String ManeColour, String TailColour, String Mother, String Father, Day bday, String Imagename, String CutiimarkImage, String MarriedTo, String[] kidNames) {
 		this.name = Name;
 		this.Gender = Gender;
-		this.description = Description;
+		this.description = "\nWater Ponii" + Description;
 		this.colour = ManeColour;
 		this.anotherColour = TailColour;
 		this.mother = Mother;
@@ -27,7 +27,7 @@ public class MarriedWaterPonii extends WaterPonii {
 	public MarriedWaterPonii(String Name, String AlternateName, String Flag, Boolean Gender, Boolean IsVamponii, String Description, String CutiiMarkInfo, String ManeColour, String TailColour, String Mother, String Father, Day bday, String Imagename, String CutiimarkImage, String[] MarriedTo, String[] kidNames) {
 		this.name = Name;
 		this.Gender = Gender;
-		this.description = "\nRegular" + Description;
+		this.description = "\nWater Ponii" + Description;
 		this.colour = ManeColour;
 		this.anotherColour = TailColour;
 		this.mother = Mother;
@@ -46,7 +46,7 @@ public class MarriedWaterPonii extends WaterPonii {
 
 	@Override
 	public String toString(Day offset) {
-		String vpni = "", partnrs = "", kdz = "None";
+		String partnrs = "", kdz = "None";
 		for (int i = 0; i < marriedTo.length; i++)
 			if (i == 0) {
 				partnrs += " " + marriedTo[i];
@@ -58,12 +58,10 @@ public class MarriedWaterPonii extends WaterPonii {
 			for (int i = 0; i < kids.length; i++)
 				kdz = kdz + kids[i] + "\n";
 		}
-		if (otherBoolean)
-			vpni = "\nIs a Vamponii";
 		String s = "Name : " + name + " AKA " + altName +
 				"\nAge : " + offset.yearsFrom(birthday) +
 				"\n\n" + super.getGender() +
-				"\n\n" + description + vpni +
+				"\n\n" + description +
 				"\nMane : " + colour + "\nTail : " + anotherColour +
 				"\nBirthday : " + birthday.getMonth() + " " + birthday.getDay() + " " + birthday.getYear() +
 				"\n\nCutii Mark : " + additionalInfo +
