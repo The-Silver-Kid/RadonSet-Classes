@@ -1,4 +1,4 @@
-package entity.FirePonii;
+package entity.Hybrid.FirePonii;
 
 import DevTSK.Util.Day;
 
@@ -9,7 +9,7 @@ public class UnMarriedFirePonii extends FirePonii {
 		this.Gender = Gender;
 		this.otherBoolean = IsVamponii;
 		this.yaBoolean = poniiparent;
-		this.description = "\nFire" + Description;
+		this.description = "\nFire Ponii" + Description;
 		this.colour = ManeColour;
 		this.anotherColour = TailColour;
 		this.mother = Mother;

@@ -1,55 +1,45 @@
-package entity.PlanePonii;
+package entity.Hybrid.PoniiDragon;
 
 import DevTSK.Util.Day;
 
-public class MarriedPlane extends PlanePonii {
+public class MarriedDragonPonii extends DragonPonii {
 
-	public MarriedPlane(String Name, String AlternateName, String Flag, Boolean Gender, Boolean IsVamponii, String Description, String CutiiMarkInfo, String ManeColour, String TailColour, String Mother, String Father, Day bday, String Imagename, String CutiimarkImage, String MarriedTo, String[] Kids) {
+	public MarriedDragonPonii(String Name, String AlternateName, String Flag, Boolean Gender, String Description, String CutiiMarkInfo, String ManeColour, String TailColour, String Mother, String Father, Day bday, String Imagename, String CutiimarkImage, String MarriedTo, String[] kidNames) {
 		this.name = Name;
 		this.Gender = Gender;
-		this.description = "\nPlone" + Description;
+		this.description = "\nDragon Ponii" + Description;
 		this.colour = ManeColour;
-		this.otherBoolean = IsVamponii;
 		this.anotherColour = TailColour;
 		this.mother = Mother;
 		this.father = Father;
 		this.birthday = bday;
-
-		this.kids = Kids;
-		this.marriedTo = new String[] { MarriedTo };
-		this.kidammount = Kids.length;
-
 		this.imagepath = Imagename;
 		this.altimagepath = CutiimarkImage;
+		this.kidammount = kidNames.length;
+		this.kids = kidNames;
+		this.marriedTo = new String[] { MarriedTo };
 		this.additionalInfo = CutiiMarkInfo;
 		this.altName = AlternateName;
-
 		this.flag = Flag;
-
 	}
 
-	public MarriedPlane(String Name, String AlternateName, String Flag, Boolean Gender, Boolean IsVamponii, String Description, String CutiiMarkInfo, String ManeColour, String TailColour, String Mother, String Father, Day bday, String Imagename, String CutiimarkImage, String[] MarriedTo, String[] Kids) {
+	public MarriedDragonPonii(String Name, String AlternateName, String Flag, Boolean Gender, String Description, String CutiiMarkInfo, String ManeColour, String TailColour, String Mother, String Father, Day bday, String Imagename, String CutiimarkImage, String[] MarriedTo, String[] kidNames) {
 		this.name = Name;
 		this.Gender = Gender;
-		this.description = "\nPlone" + Description;
+		this.description = "\nDragon Ponii" + Description;
 		this.colour = ManeColour;
-		this.otherBoolean = IsVamponii;
 		this.anotherColour = TailColour;
 		this.mother = Mother;
 		this.father = Father;
 		this.birthday = bday;
-
-		this.kids = Kids;
-		this.marriedTo = MarriedTo;
-		this.kidammount = Kids.length;
-
 		this.imagepath = Imagename;
 		this.altimagepath = CutiimarkImage;
+		this.kidammount = kidNames.length;
+		this.kids = kidNames;
+		this.marriedTo = MarriedTo;
 		this.additionalInfo = CutiiMarkInfo;
 		this.altName = AlternateName;
-
 		this.flag = Flag;
-
 	}
 
 	@Override
@@ -77,8 +67,8 @@ public class MarriedPlane extends PlanePonii {
 				"\n\nCutii Mark : " + additionalInfo +
 				"\n\nMother : " + mother + "\nFather : " + father +
 				"\n\nMarried to : " + partnrs +
-				"\nKids : " + kdz +
-				"\nFlag : '" + flag + "'" +
+				"\n\nKids : " + kdz +
+				"\n\nFlag : '" + flag + "'" +
 				"\n::End Of Ponii::";
 		return s;
 	}

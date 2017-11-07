@@ -1,4 +1,4 @@
-package entity.FirePonii;
+package entity.Hybrid.FirePonii;
 
 import entity.Ponii.Ponii;
 

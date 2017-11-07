@@ -2,7 +2,7 @@
  * @author CosmosDarkstar
  **/
 
-package entity.WerewolfPonii;
+package entity.Hybrid.WerewolfPonii;
 
 import entity.Ponii.Ponii;
 

@@ -1,15 +1,15 @@
-package entity.PlanePonii;
+package entity.Hybrid.BatPonii;
 
 import DevTSK.Util.Day;
 
-public class UnMarriedPlane extends PlanePonii {
+public class UnMarriedBatPonii extends BatPonii {
 
-	public UnMarriedPlane(String Name, String AlternateName, String Flag, Boolean Gender, Boolean IsVamponii, String Description, String CutiiMarkInfo, String ManeColour, String TailColour, String Mother, String Father, Day bday, String Imagename, String CutiimarkImage) {
+	public UnMarriedBatPonii(String Name, String AlternateName, String Flag, Boolean Gender, Boolean IsVamponii, String Description, String CutiiMarkInfo, String ManeColour, String TailColour, String Mother, String Father, Day bday, String Imagename, String CutiimarkImage) {
 		this.name = Name;
 		this.Gender = Gender;
-		this.description = "\nPlone" + Description;
-		this.colour = ManeColour;
 		this.otherBoolean = IsVamponii;
+		this.description = "\nBat Ponii" + Description;
+		this.colour = ManeColour;
 		this.anotherColour = TailColour;
 		this.mother = Mother;
 		this.father = Father;
@@ -21,7 +21,6 @@ public class UnMarriedPlane extends PlanePonii {
 		this.altName = AlternateName;
 
 		this.flag = Flag;
-
 	}
 
 	@Override

@@ -7,7 +7,7 @@ public class UnMarriedChangelingPonii extends ChangelingPonii {
 	public UnMarriedChangelingPonii(String Name, String AlternateName, String Flag, Boolean Gender, String Description, String ManeColour, String TailColour, String Mother, String Father, Day bday, String Imagename) {
 		this.name = Name;
 		this.Gender = Gender;
-		this.description = Description;
+		this.description = "\nChangeling Ponii" + Description;
 		this.colour = ManeColour;
 		this.anotherColour = TailColour;
 		this.mother = Mother;

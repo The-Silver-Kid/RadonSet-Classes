@@ -11,7 +11,7 @@ public class UnMarriedDragonPonii extends DragonPonii {
 	public UnMarriedDragonPonii(String Name, String AlternateName, String Flag, Boolean Gender, String Description, String ManeColour, String TailColour, String Mother, String Father, Day bday, String Imagename) {
 		this.name = Name;
 		this.Gender = Gender;
-		this.description = "\nDargon" + Description;
+		this.description = "\nDragon Ponii" + Description;
 		this.colour = ManeColour;
 		this.anotherColour = TailColour;
 		this.mother = Mother;

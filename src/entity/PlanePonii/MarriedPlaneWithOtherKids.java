@@ -7,7 +7,7 @@ public class MarriedPlaneWithOtherKids extends PlanePonii {
 	public MarriedPlaneWithOtherKids(String Name, String AlternateName, String Flag, Boolean Gender, Boolean IsVamponii, String Description, String CutiiMarkInfo, String ManeColour, String TailColour, String Mother, String Father, Day bday, String Imagename, String CutiimarkImage, String MarriedTo, String[] Kids, String[] kidOtherParent) {
 		this.name = Name;
 		this.Gender = Gender;
-		this.description = "\nPlane" + Description;
+		this.description = "\nPlone" + Description;
 		this.colour = ManeColour;
 		this.otherBoolean = IsVamponii;
 		this.anotherColour = TailColour;
@@ -32,7 +32,7 @@ public class MarriedPlaneWithOtherKids extends PlanePonii {
 	public MarriedPlaneWithOtherKids(String Name, String AlternateName, String Flag, Boolean Gender, Boolean IsVamponii, String Description, String CutiiMarkInfo, String ManeColour, String TailColour, String Mother, String Father, Day bday, String Imagename, String CutiimarkImage, String[] MarriedTo, String[] Kids, String[] kidOtherParent) {
 		this.name = Name;
 		this.Gender = Gender;
-		this.description = "\nPlane" + Description;
+		this.description = "\nPlone" + Description;
 		this.colour = ManeColour;
 		this.otherBoolean = IsVamponii;
 		this.anotherColour = TailColour;

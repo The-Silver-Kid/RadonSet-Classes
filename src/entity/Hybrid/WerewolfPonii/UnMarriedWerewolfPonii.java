@@ -1,7 +1,7 @@
 /**
  * @author CosmosDarkstar
  */
-package entity.WerewolfPonii;
+package entity.Hybrid.WerewolfPonii;
 
 import DevTSK.Util.Day;
 
